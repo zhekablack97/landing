@@ -1,0 +1,89 @@
+// Imports ...
+@import 'components/lending-footer', 'components/lending-header',
+  'components/lending-middle',
+   'components/lending-planshet-version.scss', 'components/lending-mobile-version';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+// Basic HTML Styles ...
+html,
+body,
+.main,
+#root,
+#__next {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/path-to-your-fonts/Inter-Regular.woff2') format('woff2'),
+       url('/path-to-your-fonts/Inter-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  /* Добавьте аналогичные объявления для других вариантов веса и стиля */
+}
+
+/* Пример использования шрифта */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+#__next {
+  overflow: auto;
+}
+
+body {
+  overflow: auto;
+  overscroll-behavior: contain;
+  background-image: linear-gradient(to right, #e2f6ff , #90DCFF);
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #2e3138;
+}
+
+// Utility Classes ...
+.test-background {
+  background-color: aqua;
+}
+
+a{
+  text-decoration: none;
+}
+
+.extra-margin-9 {
+  margin: 0 9px;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-gray {
+  background-color: #f8f8fb;
+}
+
+.fill-height {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+.background-color{
+  background-image: linear-gradient(red, yellow);
+}

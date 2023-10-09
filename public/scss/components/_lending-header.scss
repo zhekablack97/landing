@@ -1,0 +1,109 @@
+$header-bg-color: #ffffff;
+$font-family-main: "Inter", sans-serif;
+$primary-color: #333333;
+$link-margin: 40px;
+$active-border: 1px solid #ffffff;
+$btn-bg-color: #55bbeb;
+$btn-hover-bg: #3d97c0;
+
+.headerMain {
+   height: 64px;
+   max-width: 100vw;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-family: $font-family-main;
+   padding: 0px 20px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 10000;
+}
+
+.headerNav {
+   display: flex;
+   align-items: center;
+
+   img {
+      margin-right: 2px;
+   }
+}
+
+.linkUnkor {
+   margin-right: 24px;
+   padding: 5px 12px;
+}
+
+.header-nav {
+   margin-right: 12px;
+}
+
+
+.headerSetting {
+   
+   display: flex;
+   align-items: center;
+
+   a {
+      color: $primary-color;
+      text-decoration: none;
+      
+      font-weight: 600;
+      font-size: 14px;
+      transition: color 0.3s ease;
+
+
+      &:hover {
+         color: $header-bg-color;
+      }
+   }
+}
+
+.linkMobile:hover {
+   color: $header-bg-color;
+}
+
+.languageButton1,
+.languageButtonActive1 {
+   cursor: pointer;
+   margin-right: 8px;
+   padding: 8px 8px !important;
+   border-radius: 5px;
+   font-size: 14px;
+}
+
+.languageButtonActive1 {
+   border: $active-border;
+}
+
+.languageButton,
+.languageButtonActive {
+   cursor: pointer;
+   margin-right: 12px !important;
+   padding: 5px 5px;
+   border-radius: 5px;
+   font-size: 14px;
+}
+
+.languageButtonActive {
+   border: $active-border;
+}
+
+.signInButton {
+   min-width: 113px;
+   padding: 11px 20px;
+   background-color: $btn-bg-color;
+   color: #ffffff;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+   font-size: 17px;
+   font-weight: 500;
+   margin-left: 25px;
+   margin-right: 0px;
+   
+   &:hover {
+      background-color: $header-bg-color;
+   }
+}
